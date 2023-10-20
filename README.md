@@ -14,6 +14,17 @@ When integrated, Auto Scaling groups work in conjunction with load balancers. Th
 
 2. We will set desired capacity and maximum capacity of instances  along with we will give a user script data  . so that automatically it launches the multiple instances rather creating manually.
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_54_55](https://github.com/samanth2012/Load-Balancing/assets/114215621/7eabc959-7a15-4f3a-80c6-dec40fbee201)
-
+4. The First instance Private Ip address is 172.31.4.94
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_56_23](https://github.com/samanth2012/Load-Balancing/assets/114215621/3202043c-f03b-4aad-9650-a9de0d06c462)
+5. Copy the load balancer's dns name and paste it in new window then load balancer will first distrubutes traffic to first instance and we will see first instance ip address.
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_56_14](https://github.com/samanth2012/Load-Balancing/assets/114215621/dab095b6-f747-4c00-aa4d-cec4229b95ef)
+6.If we refresh the tab the load balancer will disturbute traffic to second instance we get ip address of 172.31.85.28
+
+![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_56_31](https://github.com/samanth2012/Load-Balancing/assets/114215621/22c02b54-5335-4679-a6c5-61a0f8b192bd)
+7.This is The second instances ip address
+![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_56_40](https://github.com/samanth2012/Load-Balancing/assets/114215621/98f68a28-137d-418b-a1ef-a9a546515a34)
+Upto now we have see how load balancer works now if a server down new instance should be added so to check I will terminate web2 instance
+After Some Time a new webserver will be launched with an ip address of 172.31.80.142
+![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_59_08](https://github.com/samanth2012/Load-Balancing/assets/114215621/ce6718f5-c31e-46a4-83f5-0e7d835809c1)
+If we refresh the tab we can see that at previous step ip address is 172.31.85.28 now it changed to 172.31.80.142
+![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_59_38](https://github.com/samanth2012/Load-Balancing/assets/114215621/a48dc3bb-e348-4e91-b8fa-3a04cebc5cdb)
