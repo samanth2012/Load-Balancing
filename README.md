@@ -11,18 +11,25 @@ When integrated, Auto Scaling groups work in conjunction with load balancers. Th
 
 ## Method of Implementation
 1.First We Set Auto Scaling Groups from Launch template and then we will attach load balancer to Auto Scaling group
-Auto Scaling
+
+
+Auto Scaling Groups
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_55_13](https://github.com/samanth2012/Load-Balancing/assets/114215621/9df120f4-e787-4d43-86e7-aa1b6a03c271)
+
+
 Load Balancer
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_55_23](https://github.com/samanth2012/Load-Balancing/assets/114215621/9dc11018-df9a-494c-bf58-144341044735)
+
 
 2. Specify desired capacity and maximum capacity for instances in the Auto Scaling group. Provide a user script so that instances are launched automatically, eliminating the need for manual creation.
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_54_55](https://github.com/samanth2012/Load-Balancing/assets/114215621/7eabc959-7a15-4f3a-80c6-dec40fbee201)
 
+
 3. The first instance private ip address will be 172.31.4.94
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_56_23](https://github.com/samanth2012/Load-Balancing/assets/114215621/3202043c-f03b-4aad-9650-a9de0d06c462)
 
-4. Copy the load balancer's dns name and paste it in new window then load balancer will first distrubutes traffic to first instance and we will see first instance ip address.
+
+5. Copy the load balancer's dns name and paste it in new window then load balancer will first distrubutes traffic to first instance and we will see first instance ip address.
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_56_14](https://github.com/samanth2012/Load-Balancing/assets/114215621/dab095b6-f747-4c00-aa4d-cec4229b95ef)
 
 5.If we refresh the tab the load balancer will disturbute traffic to second instance we get ip address of 172.31.85.28
