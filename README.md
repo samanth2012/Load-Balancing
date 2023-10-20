@@ -52,7 +52,8 @@ Up to now, we have seen how the load balancer works if a server is down new inst
 
 ![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_59_08](https://github.com/samanth2012/Load-Balancing/assets/114215621/ce6718f5-c31e-46a4-83f5-0e7d835809c1)
 
+
 If we refresh the tab we can see that in the previous step, the IP address was 172.31.85.28 now it changed to 172.31.80.142.
 
-![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_59_38](https://github.com/samanth2012/Load-Balancing/assets/114215621/8a1cf1c4-2a7f-4b54-a2f6-441fc5d15e00)
 
+![Instances _ EC2 _ us-east-1 - Brave 20-10-2023 09_59_19](https://github.com/samanth2012/Load-Balancing/assets/114215621/01233e3d-4662-4485-80e8-c479f44fca72)
